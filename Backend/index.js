@@ -7,7 +7,6 @@ app.use(cors());
 // for deployment
 app.set('trust proxy', 1);
 
-
 const data = [
     {
         name : 'Ajay',
@@ -33,3 +32,5 @@ app.get('/data', (req, res) => {
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
+
+export default app;
